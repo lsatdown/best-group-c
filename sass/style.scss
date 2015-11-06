@@ -3,4 +3,26 @@ h1 {
 }
 body {
 	font-family: "Univers LT W01_45 Light1475944";
+	background-color: #dadde3;
+	margin: 0;
+}
+#homepage-blurb {
+	color: #1780b7;
+}
+.logo-line-1 {
+	font-weight: 800;
+	color: #a8a8a8;
+}
+.logo-line-2 {
+	font-weight: 500;
+	color: #585858
+}
+#homepage-header {
+	background-image: url("main-photo.jpg");
+	background-size: 100% 100%;
+	border: 1px solid red;
+}
+//Stretch main image to fit screen resize
+html, body, #homepage-header {
+	height: 100%;
 }
