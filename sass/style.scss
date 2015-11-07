@@ -13,6 +13,8 @@ body {
 	background-color: $background-grey;
 	margin: 0;
 }
+
+/* ========== Honepage header section ======= */
 #homepage-blurb {
 	color: #1780b7;
 	font-size: 32px;
@@ -55,7 +57,7 @@ html, body, #homepage-header {
 	border: 1px solid $light-grey-color;
 	background: none;
 	color: $light-grey-color;
-	padding: 0 15px 0 0;
+	padding: 0 15px 0 5px;
 	text-align: center;
 	line-height: 48px;
 	font-size: 15px;
@@ -63,13 +65,14 @@ html, body, #homepage-header {
 }
 .read-more-btn:before {
 	content: "+";
-	display: inline;
-	width: 20px;
-	height: 20px;
-	font-size: 32px;
-	line-height: 40px;
-	border: 1px solid $light-grey-color;
+	display: inherit;
+	font-size: 28px;
+	border-right: 1px solid $light-grey-color;
+	padding-right: 5px;
+    margin-right: 5px;
 }
+
+/* ======== End of homepage header section == */
 
 /* =========== Top Navbar ============== */
 
@@ -154,17 +157,6 @@ html, body, #homepage-header {
 	    height: 250px;
 	    background-color: #fff;
 	}
-	@media only screen and (max-width: 500px) {
-		.col-1 {
-			width: 50%;
-		}
-		.col-2 {
-			width: 100%;
-		}
-		[class*="col-"] {
-			height: 175px;
-		}
-	}
 	.text-grid {
 		padding-left: $grid-padding-left;
 		padding-top: $grid-padding-left + 10px;
@@ -177,6 +169,29 @@ html, body, #homepage-header {
 		content: "";
 		clear: both;
 		display: block;
+	}
+	.mobile-grid-border {
+		border-right: none;
+	}
+	.desktop-grid-border {
+		border-right: 1px solid $grey-color;
+	}
+	@media only screen and (max-width: 500px) {
+		.col-1 {
+			width: 50%;
+		}
+		.col-2 {
+			width: 100%;
+		}
+		[class*="col-"] {
+			height: 175px;
+		}
+		.desktop-grid-border {
+			border-right: none;
+		}
+		.mobile-grid-border {
+			border-right: 1px solid $grey-color;
+		}
 	}
 }
 
