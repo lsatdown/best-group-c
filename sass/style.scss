@@ -2,6 +2,8 @@ $light-grey-color: #a8a8a8;
 $grey-color: #585858;
 $navbar-blue: #6896ac;
 $left-margin: 60px;
+$left-margin-mobile: 20px;
+$mobile-margin: 20px;
 $background-grey: #dadde3;
 $grid-padding-left: 20px;
 $page-top-margin: 30px;
@@ -16,6 +18,10 @@ body {
 	font-size: 32px;
 	padding-top: 120px;
 	width: 47%;
+	@media only screen and (max-width: 500px) {
+		font-size: 26px;
+		width: 100%;
+	}
 }
 #best-logo {
 	float: left;
@@ -34,6 +40,9 @@ body {
 	background-image: url("main-photo.jpg");
 	background-size: 100% 100%;
 	padding: 0 130px 0 $left-margin;
+	@media only screen and (max-width: 500px) {
+		padding: 0 20px 0 $left-margin-mobile;
+	}
 }
 //Stretch main image to fit screen resize
 html, body, #homepage-header {
@@ -88,12 +97,15 @@ html, body, #homepage-header {
 
 #services-grid {
 	margin: 0 140px 80px $left-margin;
+	@media only screen and (max-width: 500px) {
+		margin: 0 $mobile-margin $mobile-margin $mobile-margin;
+	}
 	header {
 		font-size: 26px;
 		width: 66%;
 		background-color: $background-grey;
 		position: absolute;
-		margin-top: -64px;
+		margin-top: -48px;
 		.header-text {
 			float: left;
 			padding-left: $grid-padding-left;
@@ -104,6 +116,42 @@ html, body, #homepage-header {
 			float: right;
 		}
 	}
+	.col-1 {
+		width: 33%;
+	}
+	.col-2 {
+		width: 66%;
+	}
+	[class*="col-"] {
+	    float: left;
+	    height: 250px;
+	    background-color: #fff;
+	}
+	@media only screen and (max-width: 500px) {
+		.col-1 {
+			width: 50%;
+		}
+		.col-2 {
+			width: 100%;
+		}
+		[class*="col-"] {
+			height: 175px;
+		}
+	}
+	.text-grid {
+		padding-left: $grid-padding-left;
+		padding-top: $grid-padding-left + 10px;
+	}
+	.image-grid {
+		background-image: url("grid-photo.jpeg");
+		background-size: 100% 100%;
+	}
+	.row:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
 }
+
 
 /* =========== End of Services Grid =========== */

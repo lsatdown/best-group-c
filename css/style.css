@@ -8,6 +8,10 @@ body {
   font-size: 32px;
   padding-top: 120px;
   width: 47%; }
+  @media only screen and (max-width: 500px) {
+    #homepage-blurb {
+      font-size: 26px;
+      width: 100%; } }
 
 #best-logo {
   float: left;
@@ -24,6 +28,9 @@ body {
   background-image: url("main-photo.jpg");
   background-size: 100% 100%;
   padding: 0 130px 0 60px; }
+  @media only screen and (max-width: 500px) {
+    #homepage-header {
+      padding: 0 20px 0 20px; } }
 
 html, body, #homepage-header {
   height: 100%; }
@@ -67,12 +74,15 @@ html, body, #homepage-header {
 /* =========== Services Grid =========== */
 #services-grid {
   margin: 0 140px 80px 60px; }
+  @media only screen and (max-width: 500px) {
+    #services-grid {
+      margin: 0 20px 20px 20px; } }
   #services-grid header {
     font-size: 26px;
     width: 66%;
     background-color: #dadde3;
     position: absolute;
-    margin-top: -64px; }
+    margin-top: -48px; }
     #services-grid header .header-text {
       float: left;
       padding-left: 20px;
@@ -80,6 +90,31 @@ html, body, #homepage-header {
       padding-bottom: 5px; }
     #services-grid header .header-chevron {
       float: right; }
+  #services-grid .col-1 {
+    width: 33%; }
+  #services-grid .col-2 {
+    width: 66%; }
+  #services-grid [class*="col-"] {
+    float: left;
+    height: 250px;
+    background-color: #fff; }
+  @media only screen and (max-width: 500px) {
+    #services-grid .col-1 {
+      width: 50%; }
+    #services-grid .col-2 {
+      width: 100%; }
+    #services-grid [class*="col-"] {
+      height: 175px; } }
+  #services-grid .text-grid {
+    padding-left: 20px;
+    padding-top: 30px; }
+  #services-grid .image-grid {
+    background-image: url("grid-photo.jpeg");
+    background-size: 100% 100%; }
+  #services-grid .row:after {
+    content: "";
+    clear: both;
+    display: block; }
 
 /* =========== End of Services Grid =========== */
 
