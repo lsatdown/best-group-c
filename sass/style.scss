@@ -1,3 +1,6 @@
+$light-grey-color: #a8a8a8;
+$grey-color: #585858;
+
 h1 {
 	color: orange;
 }
@@ -11,11 +14,11 @@ body {
 }
 .logo-line-1 {
 	font-weight: 800;
-	color: #a8a8a8;
+	color: $light-grey-color;
 }
 .logo-line-2 {
 	font-weight: 500;
-	color: #585858
+	color: $grey-color;
 }
 #homepage-header {
 	background-image: url("main-photo.jpg");
@@ -25,4 +28,22 @@ body {
 //Stretch main image to fit screen resize
 html, body, #homepage-header {
 	height: 100%;
+}
+.read-more-btn {
+	border: 1px solid $light-grey-color;
+	background: none;
+	color: $light-grey-color;
+	padding: 0 15px 0 0;
+	text-align: center;
+	line-height: 48px;
+	font-size: 15px;
+}
+.read-more-btn:before {
+	content: "+";
+	display: inline;
+	width: 20px;
+	height: 20px;
+	font-size: 32px;
+	line-height: 40px;
+	border: 1px solid $light-grey-color;
 }

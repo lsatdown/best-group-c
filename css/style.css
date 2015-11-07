@@ -25,4 +25,22 @@ body {
 html, body, #homepage-header {
   height: 100%; }
 
+.read-more-btn {
+  border: 1px solid #a8a8a8;
+  background: none;
+  color: #a8a8a8;
+  padding: 0 15px 0 0;
+  text-align: center;
+  line-height: 48px;
+  font-size: 15px; }
+
+.read-more-btn:before {
+  content: "+";
+  display: inline;
+  width: 20px;
+  height: 20px;
+  font-size: 32px;
+  line-height: 40px;
+  border: 1px solid #a8a8a8; }
+
 /*# sourceMappingURL=style.css.map */
