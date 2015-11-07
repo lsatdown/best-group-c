@@ -17,6 +17,9 @@ body {
   float: left;
   font-size: 24px;
   margin-top: 30px; }
+  @media only screen and (max-width: 500px) {
+    #best-logo {
+      margin-top: 20px; } }
   #best-logo .logo-line-1 {
     font-weight: 800;
     color: #a8a8a8; }
@@ -56,12 +59,12 @@ html, body, #homepage-header {
 
 /* =========== Top Navbar ============== */
 #homepage-navbar ul {
-  margin-top: 30px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden; }
 #homepage-navbar li {
+  margin-top: 30px;
   display: inline-block;
   float: right;
   color: white;
@@ -69,6 +72,18 @@ html, body, #homepage-header {
 #homepage-navbar li.important-navbar-item {
   color: #6896ac;
   border: 1px solid #6896ac; }
+#homepage-navbar .hamburger-nav {
+  display: none;
+  color: #a8a8a8;
+  font-size: 32px; }
+@media only screen and (max-width: 500px) {
+  #homepage-navbar .hamburger-nav {
+    display: inline-block;
+    float: right;
+    padding: 0 20px 0 20px;
+    margin-top: 20px; }
+  #homepage-navbar ul {
+    display: none; } }
 
 /* =========== End of Top Navbar ======= */
 /* =========== Services Grid =========== */
@@ -83,13 +98,20 @@ html, body, #homepage-header {
     background-color: #dadde3;
     position: absolute;
     margin-top: -48px; }
+    @media only screen and (max-width: 500px) {
+      #services-grid header {
+        font-size: 19px;
+        margin-top: -39px; } }
     #services-grid header .header-text {
       float: left;
       padding-left: 20px;
       padding-top: 10px;
       padding-bottom: 5px; }
     #services-grid header .header-chevron {
-      float: right; }
+      float: right;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-right: 20px; }
   #services-grid .col-1 {
     width: 33%; }
   #services-grid .col-2 {

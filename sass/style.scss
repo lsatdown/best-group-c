@@ -26,7 +26,10 @@ body {
 #best-logo {
 	float: left;
 	font-size: 24px;
-	margin-top: $page-top-margin;;
+	margin-top: $page-top-margin;
+	@media only screen and (max-width: 500px) {
+		margin-top: $mobile-margin;
+	}
 	.logo-line-1 {
 		font-weight: 800;
 		color: $light-grey-color;
@@ -72,7 +75,6 @@ html, body, #homepage-header {
 
 #homepage-navbar {
 	ul {
-		margin-top: $page-top-margin;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -80,6 +82,7 @@ html, body, #homepage-header {
 	}
 
 	li {
+		margin-top: $page-top-margin;
 		display: inline-block;
 		float: right;
 		color: white;
@@ -88,7 +91,24 @@ html, body, #homepage-header {
 	li.important-navbar-item {
 			color: $navbar-blue;
 			border: 1px solid $navbar-blue;
+	}
+	.hamburger-nav {
+		display: none;
+		color: $light-grey-color;
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 500px) {
+		.hamburger-nav {
+			display: inline-block;
+			float: right;
+			padding: 0 20px 0 $left-margin-mobile;
+			margin-top: $mobile-margin;
 		}
+		ul {
+			display: none;
+		}
+	}
+
 }
 
 /* =========== End of Top Navbar ======= */
@@ -106,6 +126,10 @@ html, body, #homepage-header {
 		background-color: $background-grey;
 		position: absolute;
 		margin-top: -48px;
+		@media only screen and (max-width: 500px) {
+			font-size: 19px;
+			margin-top: -39px;
+		}
 		.header-text {
 			float: left;
 			padding-left: $grid-padding-left;
@@ -114,6 +138,9 @@ html, body, #homepage-header {
 		}
 		.header-chevron {
 			float: right;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			padding-right: $grid-padding-left;
 		}
 	}
 	.col-1 {
