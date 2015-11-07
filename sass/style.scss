@@ -1,5 +1,6 @@
 $light-grey-color: #a8a8a8;
 $grey-color: #585858;
+$navbar-blue: #6896ac;
 
 h1 {
 	color: orange;
@@ -11,19 +12,27 @@ body {
 }
 #homepage-blurb {
 	color: #1780b7;
+	font-size: 32px;
+	padding-top: 120px;
+	width: 47%;
 }
-.logo-line-1 {
-	font-weight: 800;
-	color: $light-grey-color;
-}
-.logo-line-2 {
-	font-weight: 500;
-	color: $grey-color;
+#best-logo {
+	float: left;
+	font-size: 24px;
+	.logo-line-1 {
+		font-weight: 800;
+		color: $light-grey-color;
+	}
+	.logo-line-2 {
+		font-weight: 500;
+		color: $grey-color;
+	}
 }
 #homepage-header {
 	background-image: url("main-photo.jpg");
 	background-size: 100% 100%;
 	border: 1px solid red;
+	padding: 30px 130px 30px 60px;
 }
 //Stretch main image to fit screen resize
 html, body, #homepage-header {
@@ -37,6 +46,7 @@ html, body, #homepage-header {
 	text-align: center;
 	line-height: 48px;
 	font-size: 15px;
+	margin-top: 20px;
 }
 .read-more-btn:before {
 	content: "+";
@@ -47,3 +57,29 @@ html, body, #homepage-header {
 	line-height: 40px;
 	border: 1px solid $light-grey-color;
 }
+
+/* =========== Top Navbar ============== */
+
+#homepage-navbar {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li {
+		display: inline-block;
+		float: right;
+		color: white;
+		padding: 8px 18px;
+	}
+	li.important-navbar-item {
+			color: $navbar-blue;
+			border: 1px solid $navbar-blue;
+		}
+}
+
+
+
+/* =========== ENd of Top Navbar ======= */

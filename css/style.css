@@ -7,20 +7,26 @@ body {
   margin: 0; }
 
 #homepage-blurb {
-  color: #1780b7; }
+  color: #1780b7;
+  font-size: 32px;
+  padding-top: 120px;
+  width: 47%; }
 
-.logo-line-1 {
-  font-weight: 800;
-  color: #a8a8a8; }
-
-.logo-line-2 {
-  font-weight: 500;
-  color: #585858; }
+#best-logo {
+  float: left;
+  font-size: 24px; }
+  #best-logo .logo-line-1 {
+    font-weight: 800;
+    color: #a8a8a8; }
+  #best-logo .logo-line-2 {
+    font-weight: 500;
+    color: #585858; }
 
 #homepage-header {
   background-image: url("main-photo.jpg");
   background-size: 100% 100%;
-  border: 1px solid red; }
+  border: 1px solid red;
+  padding: 30px 130px 30px 60px; }
 
 html, body, #homepage-header {
   height: 100%; }
@@ -32,7 +38,8 @@ html, body, #homepage-header {
   padding: 0 15px 0 0;
   text-align: center;
   line-height: 48px;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-top: 20px; }
 
 .read-more-btn:before {
   content: "+";
@@ -42,5 +49,22 @@ html, body, #homepage-header {
   font-size: 32px;
   line-height: 40px;
   border: 1px solid #a8a8a8; }
+
+/* =========== Top Navbar ============== */
+#homepage-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+#homepage-navbar li {
+  display: inline-block;
+  float: right;
+  color: white;
+  padding: 8px 18px; }
+#homepage-navbar li.important-navbar-item {
+  color: #6896ac;
+  border: 1px solid #6896ac; }
+
+/* =========== ENd of Top Navbar ======= */
 
 /*# sourceMappingURL=style.css.map */
