@@ -1,8 +1,5 @@
-h1 {
-  color: orange; }
-
 body {
-  font-family: "Univers LT W01_45 Light1475944";
+  font-family: "Univers LT W01_45 Light1475944", sans-serif;
   background-color: #dadde3;
   margin: 0; }
 
@@ -14,7 +11,8 @@ body {
 
 #best-logo {
   float: left;
-  font-size: 24px; }
+  font-size: 24px;
+  margin-top: 30px; }
   #best-logo .logo-line-1 {
     font-weight: 800;
     color: #a8a8a8; }
@@ -25,8 +23,7 @@ body {
 #homepage-header {
   background-image: url("main-photo.jpg");
   background-size: 100% 100%;
-  border: 1px solid red;
-  padding: 30px 130px 30px 60px; }
+  padding: 0 130px 0 60px; }
 
 html, body, #homepage-header {
   height: 100%; }
@@ -52,6 +49,7 @@ html, body, #homepage-header {
 
 /* =========== Top Navbar ============== */
 #homepage-navbar ul {
+  margin-top: 30px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -65,6 +63,24 @@ html, body, #homepage-header {
   color: #6896ac;
   border: 1px solid #6896ac; }
 
-/* =========== ENd of Top Navbar ======= */
+/* =========== End of Top Navbar ======= */
+/* =========== Services Grid =========== */
+#services-grid {
+  margin: 0 140px 80px 60px; }
+  #services-grid header {
+    font-size: 26px;
+    width: 66%;
+    background-color: #dadde3;
+    position: absolute;
+    margin-top: -64px; }
+    #services-grid header .header-text {
+      float: left;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 5px; }
+    #services-grid header .header-chevron {
+      float: right; }
+
+/* =========== End of Services Grid =========== */
 
 /*# sourceMappingURL=style.css.map */
