@@ -1,0 +1,152 @@
+body {
+  font-family: "Univers LT W01_45 Light1475944", sans-serif;
+  background-color: #dadde3;
+  margin: 0; }
+
+/* ========== Honepage header section ======= */
+#homepage-blurb {
+  color: #1780b7;
+  font-size: 32px;
+  padding-top: 120px;
+  width: 47%; }
+  @media only screen and (max-width: 500px) {
+    #homepage-blurb {
+      font-size: 26px;
+      width: 100%; } }
+
+#best-logo {
+  float: left;
+  font-size: 24px;
+  margin-top: 30px; }
+  @media only screen and (max-width: 500px) {
+    #best-logo {
+      margin-top: 20px; } }
+  #best-logo .logo-line-1 {
+    font-weight: 800;
+    color: #a8a8a8; }
+  #best-logo .logo-line-2 {
+    font-weight: 500;
+    color: #585858; }
+
+#homepage-header {
+  background-image: url("main-photo.jpg");
+  background-size: 100% 100%;
+  padding: 0 130px 0 60px; }
+  @media only screen and (max-width: 500px) {
+    #homepage-header {
+      padding: 0 20px 0 20px; } }
+
+html, body, #homepage-header {
+  height: 100%; }
+
+.read-more-btn {
+  border: 1px solid #a8a8a8;
+  background: none;
+  color: #a8a8a8;
+  padding: 0 15px 0 5px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 15px;
+  margin-top: 20px; }
+
+.read-more-btn:before {
+  content: "+";
+  display: inherit;
+  font-size: 28px;
+  border-right: 1px solid #a8a8a8;
+  padding-right: 5px;
+  margin-right: 5px; }
+
+/* ======== End of homepage header section == */
+/* =========== Top Navbar ============== */
+#homepage-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+#homepage-navbar li {
+  margin-top: 30px;
+  display: inline-block;
+  float: right;
+  color: white;
+  padding: 8px 18px; }
+#homepage-navbar li.important-navbar-item {
+  color: #6896ac;
+  border: 1px solid #6896ac; }
+#homepage-navbar .hamburger-nav {
+  display: none;
+  color: #a8a8a8;
+  font-size: 32px; }
+@media only screen and (max-width: 500px) {
+  #homepage-navbar .hamburger-nav {
+    display: inline-block;
+    float: right;
+    padding: 0 20px 0 20px;
+    margin-top: 20px; }
+  #homepage-navbar ul {
+    display: none; } }
+
+/* =========== End of Top Navbar ======= */
+/* =========== Services Grid =========== */
+#services-grid {
+  margin: 0 140px 80px 60px; }
+  @media only screen and (max-width: 500px) {
+    #services-grid {
+      margin: 0 20px 20px 20px; } }
+  #services-grid header {
+    font-size: 26px;
+    width: 66%;
+    background-color: #dadde3;
+    position: absolute;
+    margin-top: -48px; }
+    @media only screen and (max-width: 500px) {
+      #services-grid header {
+        font-size: 19px;
+        margin-top: -39px; } }
+    #services-grid header .header-text {
+      float: left;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 5px; }
+    #services-grid header .header-chevron {
+      float: right;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-right: 20px; }
+  #services-grid .col-1 {
+    width: 33%; }
+  #services-grid .col-2 {
+    width: 66%; }
+  #services-grid [class*="col-"] {
+    float: left;
+    height: 250px;
+    background-color: #fff; }
+  #services-grid .text-grid {
+    padding-left: 20px;
+    padding-top: 30px; }
+  #services-grid .image-grid {
+    background-image: url("grid-photo.jpeg");
+    background-size: 100% 100%; }
+  #services-grid .row:after {
+    content: "";
+    clear: both;
+    display: block; }
+  #services-grid .mobile-grid-border {
+    border-right: none; }
+  #services-grid .desktop-grid-border {
+    border-right: 1px solid #585858; }
+  @media only screen and (max-width: 500px) {
+    #services-grid .col-1 {
+      width: 50%; }
+    #services-grid .col-2 {
+      width: 100%; }
+    #services-grid [class*="col-"] {
+      height: 175px; }
+    #services-grid .desktop-grid-border {
+      border-right: none; }
+    #services-grid .mobile-grid-border {
+      border-right: 1px solid #585858; } }
+
+/* =========== End of Services Grid =========== */
+
+/*# sourceMappingURL=style.css.map */

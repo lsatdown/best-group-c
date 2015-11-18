@@ -1,0 +1,199 @@
+$light-grey-color: #a8a8a8;
+$grey-color: #585858;
+$navbar-blue: #6896ac;
+$left-margin: 60px;
+$left-margin-mobile: 20px;
+$mobile-margin: 20px;
+$background-grey: #dadde3;
+$grid-padding-left: 20px;
+$page-top-margin: 30px;
+
+body {
+	font-family: "Univers LT W01_45 Light1475944", sans-serif;
+	background-color: $background-grey;
+	margin: 0;
+}
+
+/* ========== Honepage header section ======= */
+#homepage-blurb {
+	color: #1780b7;
+	font-size: 32px;
+	padding-top: 120px;
+	width: 47%;
+	@media only screen and (max-width: 500px) {
+		font-size: 26px;
+		width: 100%;
+	}
+}
+#best-logo {
+	float: left;
+	font-size: 24px;
+	margin-top: $page-top-margin;
+	@media only screen and (max-width: 500px) {
+		margin-top: $mobile-margin;
+	}
+	.logo-line-1 {
+		font-weight: 800;
+		color: $light-grey-color;
+	}
+	.logo-line-2 {
+		font-weight: 500;
+		color: $grey-color;
+	}
+}
+#homepage-header {
+	background-image: url("main-photo.jpg");
+	background-size: 100% 100%;
+	padding: 0 130px 0 $left-margin;
+	@media only screen and (max-width: 500px) {
+		padding: 0 20px 0 $left-margin-mobile;
+	}
+}
+//Stretch main image to fit screen resize
+html, body, #homepage-header {
+	height: 100%;
+}
+.read-more-btn {
+	border: 1px solid $light-grey-color;
+	background: none;
+	color: $light-grey-color;
+	padding: 0 15px 0 5px;
+	text-align: center;
+	line-height: 48px;
+	font-size: 15px;
+	margin-top: 20px;
+}
+.read-more-btn:before {
+	content: "+";
+	display: inherit;
+	font-size: 28px;
+	border-right: 1px solid $light-grey-color;
+	padding-right: 5px;
+    margin-right: 5px;
+}
+
+/* ======== End of homepage header section == */
+
+/* =========== Top Navbar ============== */
+
+#homepage-navbar {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li {
+		margin-top: $page-top-margin;
+		display: inline-block;
+		float: right;
+		color: white;
+		padding: 8px 18px;
+	}
+	li.important-navbar-item {
+			color: $navbar-blue;
+			border: 1px solid $navbar-blue;
+	}
+	.hamburger-nav {
+		display: none;
+		color: $light-grey-color;
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 500px) {
+		.hamburger-nav {
+			display: inline-block;
+			float: right;
+			padding: 0 20px 0 $left-margin-mobile;
+			margin-top: $mobile-margin;
+		}
+		ul {
+			display: none;
+		}
+	}
+
+}
+
+/* =========== End of Top Navbar ======= */
+
+/* =========== Services Grid =========== */
+
+#services-grid {
+	margin: 0 140px 80px $left-margin;
+	@media only screen and (max-width: 500px) {
+		margin: 0 $mobile-margin $mobile-margin $mobile-margin;
+	}
+	header {
+		font-size: 26px;
+		width: 66%;
+		background-color: $background-grey;
+		position: absolute;
+		margin-top: -48px;
+		@media only screen and (max-width: 500px) {
+			font-size: 19px;
+			margin-top: -39px;
+		}
+		.header-text {
+			float: left;
+			padding-left: $grid-padding-left;
+			padding-top: 10px;
+			padding-bottom: 5px;
+		}
+		.header-chevron {
+			float: right;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			padding-right: $grid-padding-left;
+		}
+	}
+	.col-1 {
+		width: 33%;
+	}
+	.col-2 {
+		width: 66%;
+	}
+	[class*="col-"] {
+	    float: left;
+	    height: 250px;
+	    background-color: #fff;
+	}
+	.text-grid {
+		padding-left: $grid-padding-left;
+		padding-top: $grid-padding-left + 10px;
+	}
+	.image-grid {
+		background-image: url("grid-photo.jpeg");
+		background-size: 100% 100%;
+	}
+	.row:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.mobile-grid-border {
+		border-right: none;
+	}
+	.desktop-grid-border {
+		border-right: 1px solid $grey-color;
+	}
+	@media only screen and (max-width: 500px) {
+		.col-1 {
+			width: 50%;
+		}
+		.col-2 {
+			width: 100%;
+		}
+		[class*="col-"] {
+			height: 175px;
+		}
+		.desktop-grid-border {
+			border-right: none;
+		}
+		.mobile-grid-border {
+			border-right: 1px solid $grey-color;
+		}
+	}
+}
+
+
+/* =========== End of Services Grid =========== */
